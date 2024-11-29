@@ -86,7 +86,7 @@ For issues or enhancements, contact the developer:
 This guide explains the internal workings of the program to help developers understand the code and contribute effectively. The program is written in **C** and serves to record transport journeys and calculate expenses for carrying goods.  
 
 ## **Code Structure**  
-
+![TA DA Tour Diary and Trasport Bill](https://github.com/adibuljabir/TA-DA-Tour-Transport-Bill-Generator/blob/main/flow.png)
 ### **1. Input Handling**  
 - Users input journey details, including dates, locations, goods, and expenses.  
 - Inputs are validated for correct journey types and date formats.  
