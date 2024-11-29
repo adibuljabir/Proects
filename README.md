@@ -1,86 +1,62 @@
-Here is the **Markdown file** for the "User Guide for TA-DA Tour Diary and Transport Bill Generator":
-
-```markdown
 # User Guide for TA-DA Tour Diary and Transport Bill Generator
 
 ## Overview
-The TA-DA Tour Diary and Transport Bill Generator is a command-line application designed to document tour details and calculate transport expenses. Follow these steps to use the program effectively.
+The **TA-DA Tour Diary and Transport Bill Generator** is a command-line application designed to document journey details and calculate transport expenses with ease. Follow this guide to effectively use the program.
 
 ---
 
 ## System Requirements
-1. **Operating System**: Windows/Linux/MacOS.
-2. **Required Tools**: A terminal/command-line interface.
+1. **Operating System**: Compatible with Windows, Linux, and MacOS.
+2. **Tools Required**: A terminal or command-line interface.
 
 ---
 
-## Step-by-Step Instructions
+## How to Use the Program
 
-### 1. Start the Program:
-- Download **TA-DA Tour & Transport Bill Generator.exe**.
-- Run **TA-DA Tour & Transport Bill Generator.exe**.
+### 1. Start the Program
+- Download the program: **TA-DA Tour & Transport Bill Generator.exe**.
+- Double-click to run the executable.
 
-### 2. Journey Type Selection:
-- Choose between:
+### 2. Select Journey Type
+- Choose one of the following options when prompted:
   - **1**: Departed with goods.
   - **2**: Returned with goods.
 
-### 3. Enter Journey Details:
-- **Goods Name**: Describe the items carried.
-- **Order Date**: Provide the date of order in **DD MM YYYY** format.
-- **Departure Details**: Input the location and time of departure.
-- **Arrival Details**: Input the location and time of arrival.
-- **Distance**: Provide the distance between the locations.
+### 3. Enter Journey Details
+You’ll be asked to provide the following information:
+- **Goods Name**: Describe the items being transported.
+- **Order Date**: Enter the order date in **DD MM YYYY** format.
+- **Departure Details**:
+  - Starting location.
+  - Departure date and time (**DD MM YYYY HH MM**).
+- **Arrival Details**:
+  - Destination location.
+  - Arrival date and time (**DD MM YYYY HH MM**).
+- **Distance**: Specify the distance (in kilometers) between the locations.
 - **Return Journey Details**:
-  - Input the location and time of departure and arrival.
-- **Transport Vehicle**: Specify the type of vehicle used.
+  - Repeat the above for the return journey (if applicable).
 
-### 4. Enter Expenses:
-- Enter amounts for:
-  - **Loading (tk)**.
-  - **Transportation (tk)**.
-  - **Unloading (tk)**.
+### 4. Specify Transport Vehicle
+Provide the type of vehicle used (e.g., Truck, Van).
 
-### 5. Generate Reports:
-- **Tour Diary**: Logs your journey details in `Tour_Diary.txt`.
-- **Transport Bill**: Records expense details in `Transport_Bill.txt`.
+### 5. Enter Expenses
+Input the expenses incurred during the journey:
+- **Loading costs** (in tk).
+- **Transportation costs** (in tk).
+- **Unloading costs** (in tk).
 
-### 6. Add More or Exit:
-- After generating reports, you’ll be prompted:
-  - **1**: Add another journey.
-  - **0**: Exit the program.
+### 6. Generate Reports
+The program will create or update the following files:
+- **`Tour_Diary.txt`**: Logs journey details.
+- **`Transport_Bill.txt`**: Records expense details.
+
+### 7. Add More Records or Exit
+Once the reports are generated, you will be asked:
+- Enter **1** to add another journey.
+- Enter **0** to exit the program.
 
 ---
 
 ## Output Examples
 
-### **Tour_Diary.txt**
-```
-| 01-11-2024 | Starting On 01-11-2024 at 08:00, I departed from City A and arrived at City B with Electronics on 01-11-2024 at 14:00, total distance: 300 km | While Returning On 02-11-2024 at 10:00, I departed from City B and arrived at City A on 02-11-2024 at 16:00, total distance: 300 km |
-```
-
-### **Transport_Bill.txt**
-```
-| 01-11-2024 | Expenditure bill for porter/labor wages for loading Electronics in a Truck from the store of City A | 500.00 tk 
-| 01-11-2024 | Expense bill for transportation of Electronics from City A to City B via Truck | 2000.00  tk 
-| 01-11-2024 | Expenditure bill for porter/labor wages for unloading Electronics from Truck and carrying them to the store of City B | 300.00 tk 
-                   Total expense of Your Journey is 500.00 + 2000.00 + 300.00 = 2800.00 tk 
-```
-
----
-
-## Notes
-- Ensure proper formatting of dates and times.
-- Avoid using special characters in text inputs like goods names or locations.
-- Files (`Tour_Diary.txt` and `Transport_Bill.txt`) are created in the same directory as the program if they don't exist.
-
----
-
-## Support
-For issues or enhancements, please contact the developer:
-
-**Developer**: Adibul Jabir  
-**Email**: [adibuljabir@outlook.com](mailto:adibuljabir@outlook.com)
-```
-
-Save this content as `User_Guide.md`. Let me know if you need further modifications!
+### **Sample Entry in Tour_Diary.txt**
