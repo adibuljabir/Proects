@@ -281,8 +281,15 @@ This structured design ensures clarity, user-friendliness, and efficient logging
 6. **File Formats**: Add support for CSV or JSON file formats.  
 7. **GUI**: Develop a graphical user interface for improved usability.  
 
+
+
+
+
+
+
+
 ---
-#FAQ (Frequently Asked Questions) for TA-DA Tour Diary and Transport Bill Generator
+# FAQ (Frequently Asked Questions) for TA-DA Tour Diary and Transport Bill Generator
 
 
 
