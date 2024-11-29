@@ -1,119 +1,86 @@
-# TA-DA Tour Diary and Transport Bill Generator
+Here is the **Markdown file** for the "User Guide for TA-DA Tour Diary and Transport Bill Generator":
 
-**Author**: Adibul Jabir  
-**Version**: 1.0  
-**License**: Open Source  
+```markdown
+# User Guide for TA-DA Tour Diary and Transport Bill Generator
 
----
-
-## **Overview**
-The **TA-DA Tour Diary and Transport Bill Generator** is a simple C program designed to assist in managing tour diaries and generating transport bill records. It logs journey details and calculates expenses related to the transportation of goods, making it ideal for small-scale operations or personal use.
+## Overview
+The TA-DA Tour Diary and Transport Bill Generator is a command-line application designed to document tour details and calculate transport expenses. Follow these steps to use the program effectively.
 
 ---
 
-## **Features**
-- Supports two journey types:
-  - Departure with goods.
-  - Return with goods.
-- Logs journey details:
-  - Dates, times, and locations.
-  - Distances traveled.
-  - Goods transported.
-- Records transport expenses:
-  - Loading, transportation, and unloading costs.
-- Outputs logs in two separate text files:
-  - `Tour_Diary.txt`
-  - `Transport_Bill.txt`
+## System Requirements
+1. **Operating System**: Windows/Linux/MacOS.
+2. **Required Tools**: A terminal/command-line interface.
 
 ---
 
-## **Setup Instructions**
+## Step-by-Step Instructions
 
-### **Prerequisites**
-- C compiler (e.g., GCC).
-- Text editor or Integrated Development Environment (IDE).
+### 1. Start the Program:
+- Download **TA-DA Tour & Transport Bill Generator.exe**.
+- Run **TA-DA Tour & Transport Bill Generator.exe**.
 
-### **Compilation**
-1. Save the source code in a file named `TourDiaryGenerator.c`.
-2. Compile the program using the following command:
-   ```bash
-   gcc -o TourDiaryGenerator TourDiaryGenerator.c
-   ```
+### 2. Journey Type Selection:
+- Choose between:
+  - **1**: Departed with goods.
+  - **2**: Returned with goods.
 
-### **Execution**
-Run the program using:
-```bash
-./TourDiaryGenerator
-```
+### 3. Enter Journey Details:
+- **Goods Name**: Describe the items carried.
+- **Order Date**: Provide the date of order in **DD MM YYYY** format.
+- **Departure Details**: Input the location and time of departure.
+- **Arrival Details**: Input the location and time of arrival.
+- **Distance**: Provide the distance between the locations.
+- **Return Journey Details**:
+  - Input the location and time of departure and arrival.
+- **Transport Vehicle**: Specify the type of vehicle used.
+
+### 4. Enter Expenses:
+- Enter amounts for:
+  - **Loading (tk)**.
+  - **Transportation (tk)**.
+  - **Unloading (tk)**.
+
+### 5. Generate Reports:
+- **Tour Diary**: Logs your journey details in `Tour_Diary.txt`.
+- **Transport Bill**: Records expense details in `Transport_Bill.txt`.
+
+### 6. Add More or Exit:
+- After generating reports, you’ll be prompted:
+  - **1**: Add another journey.
+  - **0**: Exit the program.
 
 ---
 
-## **Usage Instructions**
-1. **Select Journey Type**:  
-   - Option 1: Departed with goods.  
-   - Option 2: Returned with goods.  
-2. **Provide Journey Details**:  
-   - Departure and destination locations.  
-   - Dates, times, and distances.  
-   - Goods carried.  
-   - Vehicle details and associated costs.  
-3. **View Results**:  
-   - Journey logs are saved in `Tour_Diary.txt`.  
-   - Expense breakdown is saved in `Transport_Bill.txt`.  
-4. **Repeat or Exit**:  
-   - You can restart the process or exit the program.
-
----
-
-## **File Output Details**
+## Output Examples
 
 ### **Tour_Diary.txt**
-Logs journey details, including:
-- Departure and destination locations.
-- Dates, times, and distances.
-- Goods carried.
-
-**Example**:
 ```
-| 25-11-2024 | Starting On 25-11-2024 at 08:30, I departed from City A and arrived at City B with Electronics on 25-11-2024 at 12:00, total distance: 150 km | While Returning On 26-11-2024 at 14:00, I departed from City B and arrived at City A on 26-11-2024 at 18:30, total distance: 150 km |
---------------------------------------------------------------------------------------------------------------------------------
+| 01-11-2024 | Starting On 01-11-2024 at 08:00, I departed from City A and arrived at City B with Electronics on 01-11-2024 at 14:00, total distance: 300 km | While Returning On 02-11-2024 at 10:00, I departed from City B and arrived at City A on 02-11-2024 at 16:00, total distance: 300 km |
 ```
 
 ### **Transport_Bill.txt**
-Provides a breakdown of expenses:
-- Loading, transportation, and unloading costs.
-- Total expense for the journey.
-
-**Example**:
 ```
-| 25-11-2024 | Expenditure bill for porter/labor wages for loading Electronics in a Truck from the store of City A | 150.00 tk
-| 25-11-2024 | Expense bill for transportation of Electronics from City A to City B via Truck | 1200.00 tk
-| 25-11-2024 | Expenditure bill for porter/labor wages for unloading Electronics from Truck and carrying them to the store of City B | 200.00 tk
-                   Total expense of Your Journey is 150.00 + 1200.00 + 200.00 = 1550.00 tk
-----------------------------------------------------------------------------------------------------------------------------
+| 01-11-2024 | Expenditure bill for porter/labor wages for loading Electronics in a Truck from the store of City A | 500.00 tk 
+| 01-11-2024 | Expense bill for transportation of Electronics from City A to City B via Truck | 2000.00  tk 
+| 01-11-2024 | Expenditure bill for porter/labor wages for unloading Electronics from Truck and carrying them to the store of City B | 300.00 tk 
+                   Total expense of Your Journey is 500.00 + 2000.00 + 300.00 = 2800.00 tk 
 ```
 
 ---
 
-## **Error Handling**
-- Displays an error if the program cannot open `Tour_Diary.txt` or `Transport_Bill.txt`.
-- Ensures inputs are validated for journey type and date formats.
+## Notes
+- Ensure proper formatting of dates and times.
+- Avoid using special characters in text inputs like goods names or locations.
+- Files (`Tour_Diary.txt` and `Transport_Bill.txt`) are created in the same directory as the program if they don't exist.
 
 ---
 
-## **Future Improvements**
-- Add more journey types.
-- Support CSV or PDF export.
-- Include a graphical interface for user convenience.
+## Support
+For issues or enhancements, please contact the developer:
 
----
+**Developer**: Adibul Jabir  
+**Email**: [adibuljabir@outlook.com](mailto:adibuljabir@outlook.com)
+```
 
-## **Contribution**
-Feel free to contribute by:
-1. Forking the repository.
-2. Creating a branch for your feature or bug fix.
-3. Submitting a pull request with a clear description.
-
----
-
-**Happy Logging! 😊**
+Save this content as `User_Guide.md`. Let me know if you need further modifications!
