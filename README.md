@@ -110,13 +110,13 @@ This guide explains the internal workings of the program to help developers unde
 - **`stdio.h`**: Provides functions for input/output operations (e.g., `printf`, `scanf`, `fopen`).
 - **`string.h`**: Used for string manipulation (e.g., `fgets`, `strcspn`).
 
----
+
 
 #### **2. Main Function**
 - Acts as the entry point of the program.
 - Manages input/output and writes data to files.
 
----
+
 
 #### **3. File Handling**
 ```c
@@ -135,7 +135,7 @@ if (Tour_Diary == NULL || Transport_Bill == NULL) {
 ```
 - Terminates the program if files fail to open.
 
----
+
 
 #### **4. User Input and Journey Type**
 ```c
@@ -148,7 +148,6 @@ do {
 - Prompts the user to select a journey type.
 - Uses a **loop** to ensure valid input (`1` or `2`).
 
----
 
 #### **5. Journey and Goods Details**
 
