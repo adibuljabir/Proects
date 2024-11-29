@@ -60,3 +60,19 @@ Once the reports are generated, you will be asked:
 ## Output Examples
 
 ### **Sample Entry in Tour_Diary.txt**
+
+---
+
+## Notes and Best Practices
+- Ensure proper formatting of **dates** and **times** (e.g., **DD MM YYYY HH MM**).
+- Avoid special characters in inputs (e.g., goods names, locations).
+- Files (`Tour_Diary.txt` and `Transport_Bill.txt`) will be created in the same directory as the program if they don’t already exist.
+
+---
+
+## Support
+For assistance or feedback, reach out to the developer:
+
+**Developer**: Adibul Jabir  
+**Email**: [adibuljabir@outlook.com](mailto:adibuljabir@outlook.com)
+
