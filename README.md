@@ -100,7 +100,6 @@ This guide explains the internal workings of the program to help developers unde
 
 ### Explanation of the Program
 
----
 
 #### **1. Header Files**
 ```c
