@@ -1,7 +1,5 @@
 # User Guide for TA-DA Tour Diary and Transport Bill Generator  
 
----
-
 ## **Overview**  
 The TA-DA Tour Diary and Transport Bill Generator is a command-line application designed to document tour details and calculate transport expenses. Follow these steps to use the program effectively.  
 
