@@ -184,7 +184,6 @@ scanf("%d", &distance);
 ```
 - Records the journey's distance.
 
----
 
 #### **6. Expenses and Vehicle Information**
 
@@ -204,7 +203,6 @@ scanf("%f %f %f", &expense1, &expense2, &expense3);
 ```
 - Splits expenses into three categories: **loading**, **transportation**, and **unloading**.
 
----
 
 #### **7. Writing to Files**
 
@@ -226,7 +224,6 @@ fprintf(Transport_Bill, "| %02d-%02d-%04d | Expenditure bill for porter/labor wa
   - Expenses itemized by category (loading, transportation, unloading).
   - Total calculated expenses.
 
----
 
 #### **8. Restart Mechanism**
 ```c
@@ -236,7 +233,6 @@ scanf("%d", &restart);
 - Asks the user if they wish to generate more logs.
 - Loops back if the user selects `1`.
 
----
 
 #### **9. Exiting the Program**
 ```c
@@ -246,7 +242,6 @@ return 0;
 - Displays an exit message.
 - Ends the program when the user opts not to add more entries.
 
---- 
 
 This structured design ensures clarity, user-friendliness, and efficient logging of journey details and expenses.
 ## **Key Features for Developers**  
@@ -267,7 +262,6 @@ This structured design ensures clarity, user-friendliness, and efficient logging
 - Clear prompts guide users.  
 - Allows retries for invalid inputs.  
 
----
 
 ## **Areas for Improvement**  
 1. **Input Validation**: Validate date/time correctness & prevent negative distances or expenses.  
