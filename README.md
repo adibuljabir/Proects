@@ -1,5 +1,6 @@
 ---
 # User Guide for TA-DA Tour Diary and Transport Bill Generator  
+---
 ## **Overview**  
 The TA-DA Tour Diary and Transport Bill Generator is a command-line application designed to document tour details and calculate transport expenses. Follow these steps to use the program effectively.  
 
@@ -69,7 +70,7 @@ For issues or enhancements, contact the developer:
 
 ---
 # Developer Guide for TA-DA Tour Diary and Transport Bill Generator  
-
+---
 
 ## **Overview**  
 This guide explains the internal workings of the program to help developers understand the code and contribute effectively. The program is written in **C** and serves to record transport journeys and calculate expenses for carrying goods.  
@@ -271,3 +272,102 @@ This structured design ensures clarity, user-friendliness, and efficient logging
 7. **GUI**: Develop a graphical user interface for improved usability.  
 
 ---
+
+### FAQ (Frequently Asked Questions) for TA-DA Tour Diary and Transport Bill Generator
+---
+
+
+#### **1. What does this program do?**
+The program generates a **Tour Diary** and a **Transport Bill** for journeys involving the transport of goods. It logs journey details (such as dates, times, and locations) and calculates expenses for loading, transportation, and unloading goods.
+
+
+
+#### **2. How do I run the program?**
+1. **Compile the program** using a C compiler (e.g., GCC):
+   ```bash
+   gcc TourBill.c -o TourBill
+   ```
+2. **Run the executable**:
+   ```bash
+   ./TourBill
+   ```
+
+
+#### **3. What inputs are required?**
+- **Goods name**.
+- **Journey details**:
+  - Order Date: DD MM YYYY format.
+  - Departure and Arrival Dates/Times: DD MM YYYY HH MM format.
+  - Locations (departure and destination).
+  - Distance traveled (in kilometers).
+- **Transportation details**:
+  - Vehicle type (e.g., truck, van).
+- **Expenses**:
+  - Loading.
+  - Transportation.
+  - Unloading.
+
+
+#### **4. What files does the program generate?**
+- **Tour_Diary.txt**: Logs detailed journey records.
+- **Transport_Bill.txt**: Lists itemized expenses and total costs.
+
+
+#### **5. What if I make a mistake while entering data?**
+You can restart the program and re-enter the data. Each run **appends new data** to the existing files without overwriting them.
+
+#### **6. Where are the generated files stored?**
+The files (`Tour_Diary.txt` and `Transport_Bill.txt`) are stored in the **same directory** where the program is executed.
+
+
+
+#### **7. Can I edit the output files manually?**
+Yes, the output files are plain text and can be edited with any text editor. However, **manual edits** may disrupt the formatting.
+
+
+#### **8. What happens if I enter an invalid journey type?**
+The program only accepts two options for journey type:
+- **1**: Departed with goods.
+- **2**: Returned with goods.
+
+If you enter an invalid option, the program will prompt you to **try again**.
+
+---
+
+#### **9. Does the program validate input dates and times?**
+The program does **not** validate the correctness of dates or times (e.g., it won't detect February 30th as invalid). Ensure to enter **accurate** information.
+
+---
+
+#### **10. What happens if the program can’t open the output files?**
+If the program fails to open **Tour_Diary.txt** or **Transport_Bill.txt**, it will display an **error message** and terminate. Ensure you have **write permissions** in the program's directory.
+
+
+#### **11. Can I add multiple journeys in one session?**
+Yes, after generating a report, the program will ask:
+```
+Want to add more? (1 for Yes, 0 for No):
+```
+Enter **1** to add more journeys or **0** to exit.
+
+
+#### **12. How is the total expense calculated?**
+The total expense is calculated as:
+```
+Total Expense = Loading Expense + Transportation Expense + Unloading Expense
+```
+
+
+#### **13. Can I use this program for non-goods-related journeys?**
+The program is designed specifically for journeys involving the transport of goods. However, you can use it for other purposes by **modifying the descriptions** accordingly.
+
+#### **14. How can I customize the program?**
+You can edit the **source code** to:
+- Change text prompts.
+- Add additional fields or calculations.
+- Adjust the formatting of outputs.
+
+
+
+#### **15. Who developed this program?**
+This program was developed by **Adibul Jabir**. For feedback or assistance, please contact via email: **adibuljabir@outlook.com**.
